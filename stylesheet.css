@@ -2,17 +2,14 @@
 
 
 /* -------------------------------------------  INDEX PAGE  ------------------------------------------- */
-
-
-
-/* -------------------------------------------  DROP-DOWN MENU  ------------------------------------------- */
-
+/*  DROP-DOWN MENU */
 #dropbutton {
     padding: 0;
     /* ADDED DISPLAY BLOCK AND MARGIN AUTO TO GET TO MIDDLE OF PAGE - CAN DELETE THIS WAS JUST TO REMIND */
     display: block;
     margin: auto;
     border: none;
+    padding-bottom: 5px;
     background: none;
     background-color: white;
     color: black;
@@ -22,20 +19,17 @@
     text-align: center;
   }
 
-  /* ADDED TEXT ALIGN TO THE DROPDOWN-CONTENT WHICH MADE IT GO INTO THE MIDDLE UNDER THE RECIPE LIST */
-#dropdown-content {
+  #dropdown-content {
     display: none;
-    position: block;
     text-align: center;
     background-color: white;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
 #dropdown-content a {
     color: black;
-    padding: 5px;
+    padding: 10px;
     font-family: monospace,'Times New Roman';
     text-decoration: underline;
     display: block;
@@ -43,10 +37,19 @@
 
 #dropdown-content a:hover {background-color: #ddd;}
   
-#dropdown:hover #dropdown-content {display: block;}
-
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+/* HELLO AND WELCOME MESSAGE */
+.hellonwelcome{
+  text-align: center;
+  padding-top: 50px;
+  font-family: monospace,'Times New Roman';
+}
+.recipelist{
+  text-decoration: underline;
+}
 /* -------------------------------------------  PITTA PAGE  ------------------------------------------- */
-
 
 
 
@@ -64,10 +67,13 @@
 
 /* -------------------------------------------  ALL GROUPED-CLASSES IN PAGES  ------------------------------------------- */
 
-.homepage1,.homepage2,.homepage3{
+.homepage1,.homepage2,.homepage3,.header, p, li{
     font-family: monospace,'Times New Roman';
+    text-align: center;
 }
-.header {
-    font-family: monospace,'Times New Roman';
 
+.images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
