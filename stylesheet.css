@@ -21,16 +21,12 @@
     text-decoration: underline;
     text-align: center;
   }
-  
-#dropdown {
-    
-    position: relative;
-  }
-  
-  /* FIGURE OUT BELOW (I THINK IS SOMETHING TO DO WITH THIS I'M NOT SURE) */
+
+  /* ADDED TEXT ALIGN TO THE DROPDOWN-CONTENT WHICH MADE IT GO INTO THE MIDDLE UNDER THE RECIPE LIST */
 #dropdown-content {
     display: none;
-    position: absolute;
+    position: block;
+    text-align: center;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
